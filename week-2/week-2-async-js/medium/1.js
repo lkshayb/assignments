@@ -1,0 +1,1 @@
+require('fs').readFile("./a.txt","utf-8",(err,data) => fs.writeFile("./a.txt",data.replace(/\s+/g," "),() => console.log("done")))
